@@ -29,6 +29,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" href="./css/main.css" type="text/css">
     <link rel="stylesheet" href="./css/header.css" type="text/css">
@@ -41,7 +42,6 @@
     <header class="header">
         <a href="/" class="header-logo">@kimdungdt2412</a>
         <nav class="nav">
-            <div class="toggle"><i class="fas fa-bars"></i></div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="#projects">Projects</a></li>
             </ul>
@@ -52,7 +52,7 @@
         <section id="home">
             <div class="landing-page-details">
                 <h1 class="small-title">Hi,</h1>
-                <h2 class="big-title">I'm <span class="my-name pink">Kim Dung</span></h2>
+                <h2 class="big-title animate__fadeInLeft">I'm <span class="my-name pink">Kim Dung</span></h2>
                 <h3 class="medium-title"><em>Front-end developer</em></h3>
             </div>
             <div class="art-me">
@@ -154,7 +154,8 @@
                         </p>
                     </div>
                     <div class="card-description">
-                        <p>- Developed full-stack for the internal portal in the company using: ReactJS, NextJs, Material UI, Golang,...</p>
+                        <p>- Developed full-stack for the internal portal in the company using: ReactJS, NextJs,
+                            Material UI, Golang,...</p>
                         <p>- Pick up user stories, analyze, design, and discuss with the team to tackle them.</p>
                     </div>
                 </div>
@@ -222,7 +223,7 @@
         <section class="projects" id="projects">
             <h3>Projects</h2>
                 <div class="project-cards-container">
-                    <div class="card">
+                    <!-- <div class="card">
                         <img src="./img/project-preview/kpop-radar.JPG" alt="Project Preview Screenshot"
                             class="card-preview-img">
                         <div class="card-info">
@@ -251,7 +252,7 @@
                                 API is provided by Kpop-radar.
                             </p>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="card">
                         <img src="./img/project-preview/dailypharmacie.jpg" alt="Project Preview Screenshot"
@@ -278,13 +279,13 @@
                             </div>
                             <p class="project-description">
                                 Daily pharmacie is an e-commerce platform for pharmaceuticals
-                                <br/>
+                                <br />
                                 Team-size: 05
-                                <br/>
-                                Main responsibilities: 
-                                <br/>
+                                <br />
+                                Main responsibilities:
+                                <br />
                                 - Handle UI for user and internal.
-                                <br/>
+                                <br />
                                 - Responsible for API design and development of RESTful Services
                             </p>
                         </div>
@@ -314,8 +315,9 @@
                                 <span>Axios</span>
                             </div>
                             <p class="project-description">
-                                Clone Tix.vn - a website to book movie tickets online at theaters such as BHD, Galaxy, and CineStar.
-                                <br/>
+                                Clone Tix.vn - a website to book movie tickets online at theaters such as BHD, Galaxy,
+                                and CineStar.
+                                <br />
                                 API is provided by Cybersoft.
                             </p>
                         </div>
@@ -340,15 +342,75 @@
                                 </div>
                             </div>
                             <div class="project-skills">
-                                <span>React JS</span>
-                                <span>Material UI</span>
-                                <span>Golang</span>
-                                <span>MongoDB</span>
+                                <span>HTML</span>
+                                <span>SCSS</span>
+                                <span>Javascript</span>
                             </div>
                             <p class="project-description">
                                 A clone UI website of Mercedes-Benz homepage with full responsive,...
                             </p>
                         </div>
+                    </div>
+
+
+                    <div class="card">
+                        <img src="./img/project-preview/udemy.JPG" alt="Project Preview Screenshot"
+                            class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Udemy Homepage
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://udemy-template.netlify.app/#">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/kimdungdt2412/Udemy-Template">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>HTML</span>
+                                <span>SCSS</span>
+                                <span>Javascript</span>
+                            </div>
+                            <p class="project-description">
+                                A clone UI website of Udemy homepage with full responsive,...
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="./img/project-preview/tictactoe.JPG" alt="Project Preview Screenshot"
+                            class="card-preview-img">
+                        <div class="card-info">
+                            <div class="title-and-links">
+                                <span class="project-title">
+                                    Simple Tic-tac-toe game
+                                </span>
+                                <div class="project-links">
+                                    <a href="https://tic-tac-toe-by-kd.netlify.app/#">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="https://github.com/kimdungdt2412/tic-tac-toe">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-skills">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Javascript</span>
+                            </div>
+                            <p class="project-description">
+                                Simple tic-tac-toe game.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="background-color: #f6eee3;">
+
                     </div>
                 </div>
 
