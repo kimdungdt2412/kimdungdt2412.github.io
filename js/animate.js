@@ -81,7 +81,6 @@ const closeNav = () => {
 
 const handleMultiClassName = (currentElem, names, isRemove = false) => {
     const listNames = names.split(" ")
-    console.log(listNames)
     if (listNames.length > 0) {
         for (const element of listNames) {
             isRemove ? currentElem.classList.remove(`${element}`) : currentElem.classList.add(element)
