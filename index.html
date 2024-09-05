@@ -2,19 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>Kim Dung</title>
+    <title>Kim Dung - Front-end Developer</title>
 
-    <link rel="icon" href="favicon.ico?v=2">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="favicon.ico">
+    <!-- <link rel="manifest" href="/site.webmanifest"> -->
 
     <meta charset="UTF-8">
 
-    <meta property="og:title" content="Kim Dung" />
+    <meta property="og:title" content="Kim Dung - Front-end Developer" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kimdungdt2412.github.io/" />
-    <meta property="og:description" content="Hi! I'm Kim Dung - Software Engineer" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="https://anniew.xyz/img/me-icon-smiling.png" />
+    <meta property="og:description" content="Hi! I'm Kim Dung - Front-end Engineer" />
+    <!-- <meta property="og:image" content="https://kimdungdt2412.github.io/assets/images/me.png" /> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="copyright" content="Kim Dung">
@@ -24,538 +23,788 @@
 
     <link rel="canonical" href="https://kimdungdt2412.github.io/" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel='stylesheet' id='blockshoon-webfont-css'
+        href='https://fonts.googleapis.com/css2?family=Inter%3Awght%40300%3B400%3B700&#038;display=swap&#038;ver=6.5.5'
+        media='all' />
+    <link rel="stylesheet" href="./assets/css/output.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
-    <link rel="stylesheet" href="./css/header.css" type="text/css">
-    <link rel="stylesheet" href="./css/home.css" type="text/css">
-    <link rel="stylesheet" href="./css/projects.css" type="text/css">
-    <link rel="stylesheet" href="./css/footer.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
-        <a href="/" class="header-logo">@kimdungdt2412</a>
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
+
+    <header
+        class="site-header fixed left-0 right-0 top-0 pt-[30px] z-[1030] translate-y-0 transition-transform duration-[400ms]">
+        <div
+            class="relative flex items-center flex-nowrap justify-end max-w-screen-xl px-[25px] mx-auto min-h-[72px] xl:max-w-[1144px]">
+            <div class="logo absolute left-[50%] -translate-x-1/2 transition-transform duration-[400ms] z-[1031] ">
+                <a href="/">
+                    <img src="./assets/images/logo.png" class="w-[120px] h-auto" alt="Kim Dung">
+                </a>
+            </div>
+
+            <div id="site-responsive-nav"
+                class="flex h-screen overflow-x-hidden fixed left-0 top-0 right-0 bg-light_blue items-start flex-col overflow-auto px-[30px] pt-[165px] pb-[100px] will-change-[clip-path] z-[1030] lg:pt-[200px] lg:pb-[100px]">
+                <nav
+                    class="font-morion text-[50px] mx-auto w-[1000px] flex flex-nowrap items-center lg:w-[90%] xl:w-[1144px]">
+                    <ul class="flex flex-nowrap justify-start list-none items-start flex-col">
+                        <li class="nav-item flex items-center relative overflow-hidden flex-wrap ">
+                            <a href="#about" class="block text-[36px] md:text-[50px]">
+                                <span
+                                    class="inline-block font-inter text-center text-[13px] mr-1 w-[44px] translate-y-[-6px] lg:text-[15px] lg:w-[46px] lg:translate-y-[-10px]">01</span>
+                                About</a>
+                        </li>
+
+                        <li class="nav-item flex items-center relative overflow-hidden flex-wrap mt-5 lg:mt-[50px]">
+                            <a href="#projects" class="block text-[36px] md:text-[50px] ">
+                                <span
+                                    class="inline-block font-inter text-center text-[13px] mr-1 w-[44px] translate-y-[-6px] lg:text-[15px] lg:w-[46px] lg:translate-y-[-10px]">02</span>
+                                Projects</a>
+                        </li>
+
+                        <li class="nav-item flex items-center relative overflow-hidden flex-wrap mt-5 lg:mt-[50px]">
+                            <a href="#contact" class="block text-[36px] md:text-[50px] ">
+                                <span
+                                    class="inline-block font-inter text-center text-[13px] mr-1 w-[44px] translate-y-[-6px] lg:text-[15px] lg:w-[46px] lg:translate-y-[-10px]">03</span>
+                                Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <button id="nav-button"
+                class="menu element-button bg-pink hover:bg-dark_blue text-foreground hover:text-pink flex rounded-full cursor-pointer items-center justify-center text-[12px] h-[72px] px-[7px] py-2 relative text-center w-[72px] z-[1031] lg:w-[100px] lg:h-[100px] lg:text-[15px]">
+                <span>Menu</span>
+                <img src="./assets/images/close.svg" class="hidden w-[27px] h-[27px]" alt="">
+            </button>
+        </div>
+
     </header>
 
-    <main class="main-container about-section">
-        <section id="home">
-            <div class="landing-page-details">
-                <h1 class="small-title">Hi,</h1>
-                <h2 class="big-title">I'm <span class="my-name pink">Kim Dung</span></h2>
-                <h3 class="medium-title"><em>Software Engineer</em></h3>
-            </div>
-            <div class="art-me">
-                <img src="./img/me-cute.gif">
-            </div>
-        </section>
+    <main>
+        <div class="blob-hero relative min-h-[100vh] h-[50vh] overflow-hidden">
+            <div
+                class="blob-content flex flex-wrap flex-col items-center justify-center max-w-[912px] mx-auto px-[25px] h-full">
+                <p
+                    class="blob-content-secondary animation-element relative z-[2] text-[15px] mb-5 uppercase tracking-widest">
+                    HI, MY NAME IS
+                </p>
 
-        <section id="profile">
-            <div class="page-title">
-                <img src="./img/smile.svg" alt="Smile Icon">
-                <h2>about <span class="pink">me</span></h2>
-            </div>
-            <p class="section-description">
-                I have 3 years of experience in Software Development, with a strong focus on Front-End Development.
-                <br>
-                I'm passionate about learning new technologies and always keep concentrated on improving my self skills.
-                <br>
-                Being patient and responsible for working help me implement completely assigned tasks.
-            </p>
-            <div class="profile-container">
-                <div class="me-icon-container">
-                    <img class="me-icon" src="./img/me.png" alt="me icon" title="Icon of me">
-                </div>
-                <div class="terminal-container">
-                    <div class="terminal-header">
-                        <div id="terminal-title">about.me</div>
-                        <div class="right-side-buttons">
-                            <i class="fa-solid fa-window-minimize"></i>
-                            <i class="fa-solid fa-window-restore"></i>
-                            <i class="fa-solid fa-window-close"></i>
-                        </div>
-                    </div>
-                    <div class="terminal-window">
-                        <div class="statement">
-                            <p class="input">
-                                <span class="green">full name</span>
-                            </p>
-                            <p class="return">
-                                Dang Thi Kim Dung
-                            </p>
-                        </div>
-                        <div class="statement">
-                            <p class="input">
-                                <span class="green">date of birth</span>
-                            </p>
-                            <p class="return">
-                                24/12/2000
-                            </p>
-                        </div>
-                        <div class="statement">
-                            <p class="input">
-                                <span class="green">location</span>
-                            </p>
-                            <p class="return">
-                                Ho Chi Minh city
-                            </p>
-                        </div>
-                        <div class="statement">
-                            <p class="input">
-                                <span class="green">resume</span>
-                            </p>
-                            <p class="return">
-                                <a href="./resume.pdf" class="hyperlink" target="_blank">kimdung.pdf</a>
-                            </p>
-                        </div>
-                        <div class="statement">
-                            <p class="input bottom"><span></span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="education-experience">
+                <h1
+                    class="blob-content-primary animation-element relative z-[2] font-morion text-[38px] text-center lg:text-[60px]">
+                    Dang Thi Kim Dung.
+                    <br />
+                </h1>
+                <h2
+                    class="blob-content-primary animation-element relative z-[2] font-morion italic text-[25px] text-center lg:text-[46px]">
+                    Front-end developer.
+                </h2>
 
-            <div id="experience" class="experience-container">
-                <h3>Experience</h3>
-                <div class="education-experience-card">
-                    <div class="card-info">
-                        <p class="date">June 2023 - July 2024</p>
-                        <h4 class="green">Software Engineer</h4>
-                        <p class="company"><a href="https://precisionmed.com.vn/" target="_blank">T.D Medical
-                                Company</a>
-                        </p>
-                    </div>
-                    <div class="card-description">
-                        <b class="strong">Responsibilities</b>:
+                <div class="hire-me animation-element z-[2] mt-5">
+                    <div
+                        class="hire-me-button styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[10px] px-[23px] transition-all duration-300 cursor-pointer">
 
-                        <p>
-                            - Design, develop, and maintain web applications for managing clinic operations.
-                        </p>
-
-                        <p>
-                            - Develop features for reporting and verifying health insurance information according to
-                            the regulations of the Ministry of Health.
-                        </p>
-
-                        <p>
-                            - Design and develop applications for online appointment booking for clinics and Vien Tim
-                            TPHCM.
-                        </p>
-
-                        <p>
-                            - Develop and maintain solutions to synchronize patient data with Electronic Health
-                            Records(EHR)
-                            systems.
-                        </p>
-
-                        <p>
-                            - Working directly with Product Owner, designers and other developers to clarify
-                            requirements and
-                            propose solutions.
-                        </p>
-
-
-                        <p><b class="strong">Technologies</b>: ReactTs, React Native, C#, Redux, MUI, Tailwind, MySQL.
-                        </p>
+                        <a class="tracking-widest" href="#contact" rel="noopener noreferrer">HIRE ME</a>
                     </div>
                 </div>
 
-                <div class="education-experience-card">
-                    <div class="card-info">
-                        <p class="date">September 2021 - March 2023</p>
-                        <h4 class="green">Software Engineer</h4>
-                        <p class="company"><a href="https://thuocsi.vn/home" target="_blank">Buymed (Thuocsi.vn)</a>
-                        </p>
-                    </div>
-                    <div class="card-description">
-                        <b class="strong">Responsibilities</b>:
-
-                        <p>
-                            - Develop, and maintain internal systems to manage marketing operations, content management systems
-                            (CMS), and customer relationship management (CRM) systems.
-                        </p>
-
-                        <p>
-                            - Collaborate with the marketing team to build and enhance features that facilitate the execution of
-                            advertising and promotional campaigns.
-                        </p>
-
-                        <p>
-                            - Ensure that new features are effectively integrated and provide the necessary support for successful
-                            campaign management.
-                        </p>
-
-                        <p>
-                            - Take primary responsibility for designing and implementing automated systems to verify seller eligibility
-                            for promotional programs.
-                        </p>
-
-                        <p>
-                            - Work closely with cross-functional teams, including marketing, sales, warehouses, and other developers
-                            to deliver high-quality solutions
-                        </p>
-
-
-                        <p><b class="strong">Technologies</b>: ReactJs, NextJS, Go, MongoDB, Material UI.
-                        </p>
-                    </div>
-                </div>
-                <div class="education-experience-card">
-                    <div class="card-info">
-                        <p class="date">February 2021 - May 2021</p>
-                        <h4 class="green">Front-end Developer Intern</h4>
-                        <p class="company"><a href="https://akabiz.net/" target="_blank"> akaBiz</a>
-                        </p>
-                    </div>
-                    <div class="card-description">
-                        <p>
-
-                            <b class="strong">Responsibilities</b>:
-
-                        <p>
-                            - Convert design files created in Figma into fully functional web pages using HTML and CSS
-                        </p>
-
-                        <p>
-                            - Design and build the UI for a system that allows customers to manage templates used for automated
-                            messaging
-                        </p>
-
-            
-
-                        <p><b class="strong">Technologies</b>: ReactTs, Redux, Material UI.
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div id="education" class="education-experience-container">
-                <h3>Education</h3>
-                <div class="education-experience-info">
-                    <div class="education-card">
-                        <div class="card-info">
-                            <p class="date">2018 - 2021</p>
-                            <h4 class="green">Information Technology</h4>
-                            <p>VNUHCM-University Of Science
-                                Ho Chi Minh City</p>
-                        </div>
-                    </div>
-                    <div class="education-card">
-                        <div class="card-info">
-                            <p class="date">
-                                2020</p>
-                            <h4 class="green">Front-end Course</h4>
-                            <p>Cybersoft Academy
-                                Ho Chi Minh City</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section id="tech-stack">
-            <h3>Tech Stack</h3>
-            <div class="tech-stack-container">
-                <div class="skill">
-                    <img src="./img/git.svg" alt="Git Icon"><span>Git</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/html5.svg" alt="HTML5 Icon"><span>HTML5</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/css3.svg" alt="CSS3 Icon"><span>CSS3</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/bootstrap5.svg" alt="bootstrap5 Icon"><span>Bootstrap</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/sass.svg" alt="sass Icon"><span>Sass</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/tailwind.svg" alt="tailwind Icon"><span>Tailwind CSS</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/javascript.svg" alt="Javascript icon"><span>Javascript</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/typescript.svg" alt="Typescript icon"><span>Typescript</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/react.svg" alt="React Icon"><span>React</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/redux.svg" alt="Redux Icon"><span>Redux</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/next-js.svg" alt="NextJs Icon"><span>NextJs</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/material-ui.svg" alt="MaterialUI Icon"><span>Material UI</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/vue.png" alt="Vue Icon"><span>Vue JS</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/golang.svg" alt="Golang Icon"><span>Golang</span>
-                </div>
-                <div class="skill">
-                    <img src="./img/mongodb.svg" alt="Mongodb Icon"><span>Mongodb</span>
-                </div>
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <h3>Projects</h2>
-                <div class="project-cards-container">
-                    <div class="card">
-                        <img src="./img/project-preview/kpop-radar.JPG" alt="Project Preview Screenshot"
-                            class="card-preview-img">
-                        <div class="card-info">
-                            <div class="title-and-links">
-                                <span class="project-title">
-                                    Kpop-radar
-                                </span>
-                                <div class="project-links">
-                                    <a href="https://clone-kpop-radar.vercel.app/" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/kimdungdt2412/clone-kpop-radar" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-skills">
-                                <span>React JS</span>
-                                <span>Redux toolkit</span>
-                                <span>RTK Query</span>
-                                <span>TailwindCss</span>
-                            </div>
-                            <p class="project-description">
-                                This is a frontend clone of Kpop-radar's website - a website provides objective data by
-                                detecting an artist’s fandom size, growth, and achieved milestones across social
-                                platforms.
-                                <br />
-                                API is provided by Kpop-radar.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./img/project-preview/dailypharmacie.jpg" alt="Project Preview Screenshot"
-                            class="card-preview-img">
-                        <div class="card-info">
-                            <div class="title-and-links">
-                                <span class="project-title">
-                                    Daily pharmacie
-                                </span>
-                                <div class="project-links">
-                                    <a href="http://dailypharmacie.com/" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <!-- <a href="https://github.com/kimdungdt2412/nunflix">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a> -->
-                                </div>
-                            </div>
-                            <div class="project-skills">
-                                <span>React JS</span>
-                                <span>Material UI</span>
-                                <span>Golang</span>
-                                <span>MongoDB</span>
-                            </div>
-                            <p class="project-description">
-                                Daily pharmacie is an e-commerce platform for pharmaceuticals
-                                <br />
-                                Team-size: 05
-                                <br />
-                                Main responsibilities:
-                                <br />
-                                - Handle UI for user and internal.
-                                <br />
-                                - Responsible for API design and development of RESTful Services
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./img/project-preview/tix.jpg" alt="Project Preview Screenshot"
-                            class="card-preview-img">
-                        <div class="card-info">
-                            <div class="title-and-links">
-                                <span class="project-title">
-                                    Online Booking Movie Tickets
-                                </span>
-                                <div class="project-links">
-                                    <a href="https://tix-movie-ticket.vercel.app/" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/kimdungdt2412/booking-ticket-movie" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-skills">
-                                <span>React JS</span>
-                                <span>Redux</span>
-                                <span>Sass</span>
-                                <span>Axios</span>
-                            </div>
-                            <p class="project-description">
-                                Clone Tix.vn - a website to book movie tickets online at theaters such as BHD, Galaxy,
-                                and CineStar.
-                                <br />
-                                API is provided by Cybersoft.
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <img src="./img/project-preview/mercedes.jpg" alt="Project Preview Screenshot"
-                            class="card-preview-img">
-                        <div class="card-info">
-                            <div class="title-and-links">
-                                <span class="project-title">
-                                    Mercedes-Benz Homepage
-                                </span>
-                                <div class="project-links">
-                                    <a href="https://dreamy-nobel-f89cbf.netlify.app/" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/kimdungdt2412/Mercedes-Benz" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-skills">
-                                <span>HTML</span>
-                                <span>SCSS</span>
-                                <span>Javascript</span>
-                            </div>
-                            <p class="project-description">
-                                A clone UI website of Mercedes-Benz homepage with full responsive,...
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="card">
-                        <img src="./img/project-preview/udemy.JPG" alt="Project Preview Screenshot"
-                            class="card-preview-img">
-                        <div class="card-info">
-                            <div class="title-and-links">
-                                <span class="project-title">
-                                    Udemy Homepage
-                                </span>
-                                <div class="project-links">
-                                    <a href="https://udemy-template.netlify.app/#" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/kimdungdt2412/Udemy-Template" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-skills">
-                                <span>HTML</span>
-                                <span>SCSS</span>
-                                <span>Javascript</span>
-                            </div>
-                            <p class="project-description">
-                                A clone UI website of Udemy homepage with full responsive,...
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <img src="./img/project-preview/tictactoe.JPG" alt="Project Preview Screenshot"
-                            class="card-preview-img">
-                        <div class="card-info">
-                            <div class="title-and-links">
-                                <span class="project-title">
-                                    Simple Tic-tac-toe game
-                                </span>
-                                <div class="project-links">
-                                    <a href="https://tic-tac-toe-by-kd.netlify.app/#" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                    <a href="https://github.com/kimdungdt2412/tic-tac-toe" target="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-skills">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>Javascript</span>
-                            </div>
-                            <p class="project-description">
-                                Simple tic-tac-toe game.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card" style="background-color: #f6eee3;">
-
-                    </div>
-                </div>
-
-                <!-- <div class="cta-container">
-                <a href="" class="cta">
-                    <img src="./img/coding.svg" alt="Code Icon">
-                    <span>Explore More</span>
-                </a>
-            </div> -->
-        </section>
-        <section id="all-social-media">
-            <h3>Contact</h3>
-            <div class="social-media-list">
-                <a href="https://github.com/kimdungdt2412" class="social-media-item">
-                    <i class="fa-brands fa-github"></i>
-                    kimdungdt2412
-                </a>
-                <a href="mailto:kimdungdt2412@gmail.com" class="social-media-item">
-                    <i class="fa-solid fa-envelope"></i>
-                    kimdungdt2412@gmail.com
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer-container">
-        <div class="footer">
-            <div class="footer-column">
-                <a href="/" class="footer-logo">@kimdungdt2412</a>
-            </div>
-            <div class="footer-column">
-                <a href="#projects" class="footer-button">
-                    <img src="./img/coding.svg" alt="Code Icon">
-                    Projects
-                </a>
-
-            </div>
-            <div class="footer-column">
-                <a href="mailto:kimdungdt2412@gmail.com" class="footer-button">
-                    <img src="./img/email.svg" alt="Email Icon">
-                    Contact
-                </a>
             </div>
         </div>
+
+
+        <div id="about"
+            class="about-me relative flex items-center justify-between max-w-[1144px] flex-nowrap mx-auto flex-col pt-[70px] pb-[120px] px-[25px] md:flex-row xl:max-w-[90%]">
+            <div class="line-circles animation-element relative w-[189px] h-[189px] mx-auto md:w-[372px] md:h-[372px]">
+                <svg width="372" height="373" viewBox="0 0 372 373" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="372"
+                        height="373">
+                        <circle opacity=".25" cx="185.723" cy="186.488" r="185.723"
+                            transform="rotate(-90 185.723 186.488)" fill="#FAFF0E"></circle>
+                    </mask>
+                    <g mask="url(#a)" stroke="#1D3D91" stroke-width="1.203">
+                        <path
+                            d="M-8.188 372.353h388.566M-8.188 359.699h388.566M-8.188 347.044h388.566M-8.188 334.39h388.566M-8.188 321.735l388.566.001M-8.188 309.081h388.566M-8.188 296.427h388.566M-8.188 283.772h388.566M-8.188 271.118h388.566M-8.188 258.463h388.566M-8.188 245.809h388.566M-8.188 233.154h388.566M-8.188 220.5h388.566M-8.188 207.845h388.566M-8.188 195.191h388.566M-8.188 182.536h388.566M-8.188 169.882h388.566M-8.188 157.227h388.566M-8.188 144.573h388.566M-8.188 131.918h388.566M-8.188 119.264h388.566M-8.188 106.609l388.566.001M-8.188 93.955h388.566M-8.188 81.3h388.566M-8.188 68.646h388.566M-8.188 55.992h388.566M-8.188 43.337h388.566M-8.188 30.683h388.566M-8.188 18.028h388.566M-8.188 5.374h388.566">
+                        </path>
+                    </g>
+                </svg>
+
+                <svg width="372" height="373" viewBox="0 0 372 373" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="b" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="372"
+                        height="373">
+                        <circle opacity=".25" cx="185.723" cy="186.488" r="185.723"
+                            transform="rotate(-90 185.723 186.488)" fill="#FAFF0E"></circle>
+                    </mask>
+                    <g mask="url(#b)" stroke="#1D3D91" stroke-width="1.203">
+                        <path
+                            d="M-8.188 372.353h388.566M-8.188 359.699h388.566M-8.188 347.044h388.566M-8.188 334.39h388.566M-8.188 321.735l388.566.001M-8.188 309.081h388.566M-8.188 296.427h388.566M-8.188 283.772h388.566M-8.188 271.118h388.566M-8.188 258.463h388.566M-8.188 245.809h388.566M-8.188 233.154h388.566M-8.188 220.5h388.566M-8.188 207.845h388.566M-8.188 195.191h388.566M-8.188 182.536h388.566M-8.188 169.882h388.566M-8.188 157.227h388.566M-8.188 144.573h388.566M-8.188 131.918h388.566M-8.188 119.264h388.566M-8.188 106.609l388.566.001M-8.188 93.955h388.566M-8.188 81.3h388.566M-8.188 68.646h388.566M-8.188 55.992h388.566M-8.188 43.337h388.566M-8.188 30.683h388.566M-8.188 18.028h388.566M-8.188 5.374h388.566">
+                        </path>
+                    </g>
+                </svg>
+
+                <div class="stickers flex">
+                    <figure class="cat-sticker relative flex items-center justify-center">
+                        <img class="opacity-0 relative z-[2] rotate-[16deg]" src="./assets/images/cute-cat.png"
+                            alt="cat">
+
+                    </figure>
+
+                    <figure class="dog-sticker relative flex items-center justify-center">
+                        <img class="opacity-0 relative z-[2] rotate-[-16deg] scale-[1.75]"
+                            src="./assets/images/cute-dog.png" alt="cat">
+
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="about-content animation-element max-w-[490px] translate-y-[50px] z-10 lg:max-w-[640px]">
+                <h2 class="text-[42px] font-morion opacity-0 mb-2 md:text-[50px]">About me.</h2>
+                <p class="text-[15px] opacity-0 md:text-[21px]">
+                    Hello! My name is Kim Dung. I have 3 years of experience in Software Development, specializing in
+                    Front-End Development. I have a strong background in web development and a deep love for design. Iam
+                    dedicated to creating user-friendly and visually appealing web experiences. Throughout my career, I
+                    have had the opportunity to work on various projects across different fields, including e-commerce,
+                    pharmaceuticals, and healthcare.
+                </p>
+
+
+                <div class="tech-stacks flex flex-wrap mt-5 gap-2">
+
+                    <div
+                        class="stack-1 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/git.svg" />
+                        <p class="tracking-widest">GIT</p>
+                    </div>
+
+                    <div
+                        class="stack-2 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/html5.svg" />
+                        <p class="tracking-widest">HTML</p>
+                    </div>
+
+                    <div
+                        class="stack-3 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/css3.svg" />
+                        <p class="tracking-widest">CSS</p>
+                    </div>
+
+                    <div
+                        class="stack-2 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/bootstrap5.svg" />
+                        <p class="tracking-widest">BOOTSTRAP</p>
+                    </div>
+
+                    <div
+                        class="stack-1 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/sass.svg" />
+                        <p class="tracking-widest">SASS</p>
+                    </div>
+
+
+                    <div
+                        class="stack-1 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/tailwind.svg" />
+                        <p class="tracking-widest">TAILWINDCSS</p>
+                    </div>
+
+
+                    <div
+                        class="stack-1 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/javascript.svg" />
+                        <p class="tracking-widest">JAVASCRIPT</p>
+                    </div>
+
+
+                    <div
+                        class="stack-2 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/typescript.svg" />
+                        <p class="tracking-widest">TYPESCRIPT</p>
+                    </div>
+
+
+                    <div
+                        class="stack-4 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/react.svg" />
+                        <p class="tracking-widest">REACT</p>
+                    </div>
+
+
+                    <div
+                        class="stack-2 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/redux.svg" />
+                        <p class="tracking-widest">REDUX</p>
+                    </div>
+
+
+                    <div
+                        class="stack-1 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/next-js.svg" />
+                        <p class="tracking-widest">NEXTJS</p>
+                    </div>
+
+                    <div
+                        class="stack-3 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/material-ui.svg" />
+                        <p class="tracking-widest">MUI</p>
+                    </div>
+
+                    <div
+                        class="stack-1 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/golang.svg" />
+                        <p class="tracking-widest">GO</p>
+                    </div>
+
+                    <div
+                        class="stack-2 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/vue.svg" />
+                        <p class="tracking-widest">VUE JS</p>
+                    </div>
+
+                    <div
+                        class="stack-1 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/mongodb.svg" />
+                        <p class="tracking-widest">MONGODB</p>
+                    </div>
+
+                    <div
+                        class="stack-2 animation-element opacity-0 styled-button relative flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                        <img class="mr-2 w-[24px] h-[24px]" src="assets/images/mysql.svg" />
+                        <p class="tracking-widest">MYSQL</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div id="projects" class="projects relative px-[25px] mt-[20px] max-w-[1144px] mx-auto lg:max-w-[90%]">
+            <div
+                class="projects-heading flex flex-col animation-element w-full opacity-0 translate-y-[50px] mb-[48px] md:flex-row md:flex-nowrap">
+                <h3
+                    class="border-b-[1px] border-dark_blue pb-[20px] font-inter text-[15px] md:text-[18px] md:border-b-0 md:mr-[53px] md:border-t-[1px] md:pb-0 md:pt-[33px] md:text-nowrap">
+                    SOME THINGS I'VE BUILT</h3>
+                <h2
+                    class="text-[42px] pt-[20px] font-morion mb-2 md:w-[inherit] md:text-[50px] md:pt-[15px] md:border-t-dark_blue md:border-t-[1px]">
+                    Projects.</h2>
+            </div>
+
+            <div class="projects-list animation-element opacity-0">
+                <div class="projects-item animation-element">
+
+                    <img class="cursor-pointer w-full md:max-w-[300px] lg:max-w-[400px] xl:max-w-[450px] rounded-[10px] h-fit mb-[1rem]"
+                        loading="lazy" src="assets/images/project-preview/kpop-radar.JPG" alt="kpop-radar"
+                        onclick="(() => window.open('https://clone-kpop-radar.vercel.app/'))()">
+
+                    <div class="projects-info block text-dark_blue w-full">
+
+                        <a href="https://clone-kpop-radar.vercel.app/" target="_blank">
+
+                            <h3 class="font-morion text-[32px] mb-[1rem] text-balance md:text-[50px] md:mb-0">KPOP RADAR
+                            </h3>
+                        </a>
+
+                        <p class="text-[15px] md:text-[18px]">
+                            This is a frontend clone of Kpop-radar's website, a platform that delivers objective
+                            insights by monitoring and analyzing an artist’s fanbase size, growth trajectory, and
+                            accomplishments across social media channels.
+                        </p>
+
+                        <ul class="flex mt-4 font-medium gap-2.5 flex-wrap text-blue">
+                            <li class="projects-stack">
+                                ReactJS
+                            </li>
+
+                            <li class="projects-stack">
+                                Redux toolkit
+                            </li>
+
+                            <li class="projects-stack">
+                                RTK Query
+                            </li>
+
+                            <li class="projects-stack">
+                                Tailwind CSS
+                            </li>
+                        </ul>
+
+                        <div class="flex justify-end mt-1 text-dark_blue flex-nowrap md:mt-2">
+                            <a class="projects-link" href="https://github.com/kimdungdt2412/clone-kpop-radar"
+                                target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a class="projects-link" href="https://clone-kpop-radar.vercel.app/" target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-external-link">
+                                    <title>External Link</title>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="projects-item animation-element !pt-[60px] md:!pt-[80px]">
+
+                    <img class="cursor-pointer w-full md:max-w-[300px] lg:max-w-[400px] xl:max-w-[450px] rounded-[10px] h-fit mb-[1rem]"
+                        loading="lazy" src="assets/images/project-preview/emr.PNG" alt="emr"
+                        onclick="(() => window.open('https://emr-demo.netlify.app/'))()">
+
+                    <div class="projects-info block text-dark_blue w-full">
+
+                        <a href="https://emr-demo.netlify.app/" target="_blank">
+
+                            <h3 class="font-morion text-[32px] mb-[1rem] text-balance md:text-[50px] md:mb-0">EMR</h3>
+                        </a>
+
+                        <p class="text-[15px] md:text-[18px]">
+                            This landing page introduces a management and patient care system for clinics and hospitals.
+                            It streamlines administrative tasks, enhances patient experience, and optimizes operations,
+                            supporting efficient scheduling, medical records management, and treatment tracking.
+                        </p>
+
+                        <ul class="flex mt-4 font-medium gap-2.5 flex-wrap text-blue">
+                            <li class="projects-stack">
+                                HTML
+                            </li>
+
+                            <li class="projects-stack">
+                                Tailwind CSS
+                            </li>
+
+                            <li class="projects-stack">
+                                Javascript
+                            </li>
+                        </ul>
+
+                        <div class="flex justify-end mt-1 text-dark_blue flex-nowrap md:mt-2">
+                            <a class="projects-link" href="https://github.com/kimdungdt2412/EMR_LandingPage"
+                                target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a class="projects-link" href="https://emr-demo.netlify.app/" target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-external-link">
+                                    <title>External Link</title>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="projects-item animation-element !pt-[60px] md:!pt-[80px]">
+
+                    <img class="cursor-pointer w-full md:max-w-[300px] lg:max-w-[400px] xl:max-w-[450px] rounded-[10px] h-fit mb-[1rem]"
+                        loading="lazy" src="assets/images/project-preview/dailypharmacie.jpg" alt="dailypharmacie"
+                        onclick="(() => window.open('http://dailypharmacie.com/'))()">
+
+                    <div class="projects-info block text-dark_blue w-full">
+
+                        <a href="https://emr-demo.netlify.app/" target="_blank">
+
+                            <h3 class="font-morion text-[32px] mb-[1rem] text-balance md:text-[50px] md:mb-0">DAILY
+                                PHARMACIE </h3>
+                        </a>
+
+                        <p class="text-[15px] md:text-[18px]">
+                            Daily pharmacie is an e-commerce platform for pharmaceuticals.
+                            <br />
+                            Team-size: 04
+                            <br />
+                            Main responsibilities:
+                            <br />
+                            - Responsible for developing features and UI for product showcase pages, CMS, and CRM
+                            systems.
+                            <br />
+                            - Responsible for API design and development of RESTful Services
+                        </p>
+
+                        <ul class="flex mt-4 font-medium gap-2.5 flex-wrap text-blue">
+                            <li class="projects-stack">
+                                ReactJS
+                            </li>
+
+                            <li class="projects-stack">
+                                Material UI
+                            </li>
+
+                            <li class="projects-stack">
+                                Axios
+                            </li>
+
+                            <li class="projects-stack">
+                                Golang
+                            </li>
+
+                            <li class="projects-stack">
+                                MongoDB
+                            </li>
+                        </ul>
+
+                        <div class="flex justify-end mt-1 text-dark_blue flex-nowrap md:mt-2">
+
+                            <a class="projects-link" href="http://dailypharmacie.com/" target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-external-link">
+                                    <title>External Link</title>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="projects-item animation-element !pt-[60px] md:!pt-[80px]">
+
+                    <img class="cursor-pointer w-full md:max-w-[300px] lg:max-w-[400px] xl:max-w-[450px] rounded-[10px] h-fit mb-[1rem]"
+                        loading="lazy" src="assets/images/project-preview/tix.jpg" alt="tix"
+                        onclick="(() => window.open('https://tix-movie-ticket.vercel.app/'))()">
+
+                    <div class="projects-info block text-dark_blue w-full">
+
+                        <a href="https://tix-movie-ticket.vercel.app/" target="_blank">
+
+                            <h3 class="font-morion text-[32px] mb-[1rem] text-balance md:text-[50px] md:mb-0">TIX.VN
+                            </h3>
+                        </a>
+
+                        <p class="text-[15px] md:text-[18px]">
+                            Clone Tix.vn - a website designed for booking movie tickets online at theaters like BHD,
+                            Galaxy, and CineStar.
+                        </p>
+
+                        <ul class="flex mt-4 font-medium gap-2.5 flex-wrap text-blue">
+                            <li class="projects-stack">
+                                ReactJS
+                            </li>
+
+                            <li class="projects-stack">
+                                Redux
+                            </li>
+
+                            <li class="projects-stack">
+                                Sass
+                            </li>
+
+                            <li class="projects-stack">
+                                Axios
+                            </li>
+                        </ul>
+
+                        <div class="flex justify-end mt-1 text-dark_blue flex-nowrap md:mt-2">
+
+                            <a class="projects-link" href="https://github.com/kimdungdt2412/booking-ticket-movie"
+                                target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a class="projects-link" href="https://tix-movie-ticket.vercel.app/" target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-external-link">
+                                    <title>External Link</title>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="projects-item animation-element !pt-[60px] md:!pt-[80px]">
+
+                    <img class="cursor-pointer w-full md:max-w-[300px] lg:max-w-[400px] xl:max-w-[450px] rounded-[10px] h-fit mb-[1rem]"
+                        loading="lazy" src="assets/images/project-preview/mercedes.jpg" alt="mercedes"
+                        onclick="(() => window.open('https://dreamy-nobel-f89cbf.netlify.app/'))()">
+
+                    <div class="projects-info block text-dark_blue w-full">
+
+                        <a href="https://dreamy-nobel-f89cbf.netlify.app/" target="_blank">
+
+                            <h3 class="font-morion uppercase text-[32px] mb-[1rem] text-balance md:text-[50px] md:mb-0">
+                                Mercedes-Benz Homepage</h3>
+                        </a>
+
+                        <p class="text-[15px] md:text-[18px]">
+                            A clone UI website of Mercedes-Benz homepage with fully responsive,...
+                        </p>
+
+                        <ul class="flex mt-4 font-medium gap-2.5 flex-wrap text-blue">
+                            <li class="projects-stack">
+                                HTML
+                            </li>
+
+                            <li class="projects-stack">
+                                Sass
+                            </li>
+
+                            <li class="projects-stack">
+                                Javascript
+                            </li>
+                        </ul>
+
+                        <div class="flex justify-end mt-1 text-dark_blue flex-nowrap md:mt-2">
+
+                            <a class="projects-link" href="https://github.com/kimdungdt2412/Mercedes-Benz"
+                                target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a class="projects-link" href="https://dreamy-nobel-f89cbf.netlify.app/" target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-external-link">
+                                    <title>External Link</title>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="projects-item animation-element !pt-[60px] md:!pt-[80px]">
+
+                    <img class="cursor-pointer w-full md:max-w-[300px] lg:max-w-[400px] xl:max-w-[450px] rounded-[10px] h-fit mb-[1rem]"
+                        loading="lazy" src="assets/images/project-preview/udemy.JPG" alt="udemy-template"
+                        onclick="(() => window.open('https://udemy-template.netlify.app/'))()">
+
+                    <div class="projects-info block text-dark_blue w-full">
+
+                        <a href="https://udemy-template.netlify.app/" target="_blank">
+
+                            <h3 class="font-morion text-[32px] mb-[1rem] text-balance md:text-[50px] md:mb-0">Udemy
+                                Homepage </h3>
+                        </a>
+
+                        <p class="text-[15px] md:text-[18px]">
+                            A clone UI website of Udemy homepage with fully responsive,...
+                        </p>
+
+                        <ul class="flex mt-4 font-medium gap-2.5 flex-wrap text-blue">
+                            <li class="projects-stack">
+                                HTML
+                            </li>
+
+                            <li class="projects-stack">
+                                Sass
+                            </li>
+
+                            <li class="projects-stack">
+                                Javascript
+                            </li>
+                        </ul>
+
+                        <div class="flex justify-end mt-1 text-dark_blue flex-nowrap md:mt-2">
+
+                            <a class="projects-link" href="https://github.com/kimdungdt2412/Udemy-Template"
+                                target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a class="projects-link" href="https://udemy-template.netlify.app/" target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-external-link">
+                                    <title>External Link</title>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="projects-item animation-element !pt-[60px] md:!pt-[80px]">
+
+                    <img class="cursor-pointer w-full md:max-w-[300px] lg:max-w-[400px] xl:max-w-[450px] rounded-[10px] h-fit mb-[1rem]"
+                        loading="lazy" src="assets/images/project-preview/tictactoe.JPG" alt="tic-tac-toe"
+                        onclick="(() => window.open('https://tic-tac-toe-by-kd.netlify.app'))()">
+
+                    <div class="projects-info block text-dark_blue w-full">
+
+                        <a href="https://tic-tac-toe-by-kd.netlify.app" target="_blank">
+
+                            <h3 class="font-morion text-[32px] mb-[1rem] text-balance md:text-[50px] md:mb-0">
+                                Tic-tac-toe</h3>
+                        </a>
+
+                        <p class="text-[15px] md:text-[18px]">
+                            Simple tic-tac-toe game.
+                        </p>
+
+                        <ul class="flex mt-4 font-medium gap-2.5 flex-wrap text-blue">
+                            <li class="projects-stack">
+                                ReactJS
+                            </li>
+
+                            <li class="projects-stack">
+                                Redux
+                            </li>
+
+                            <li class="projects-stack">
+                                Sass
+                            </li>
+
+                            <li class="projects-stack">
+                                Axios
+                            </li>
+                        </ul>
+
+                        <div class="flex justify-end mt-1 text-dark_blue flex-nowrap md:mt-2">
+
+                            <a class="projects-link" href="https://github.com/kimdungdt2412/tic-tac-toe"
+                                target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-github">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                            </a>
+
+                            <a class="projects-link" href="https://tic-tac-toe-by-kd.netlify.app" target="_blank">
+                                <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" role="img"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-external-link">
+                                    <title>External Link</title>
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="contact"
+            class="contact animation-element transition-opacity duration-1000 mt-[120px] px-[25px] max-w-[1144px] mx-auto lg:max-w-[90%] opacity-0 ease-[cubic-bezier(0.215,0.61,0.355,1)]">
+
+            <h2 class="text-center text-[42px] font-morion pb-[10px] mb-[30px] lg:text-[130px]">CONTACT</h2>
+
+
+            <div class="flex mb-[40px] justify-center flex-wrap items-center flex-col md:flex-row md:items-center">
+
+                <div class="max-w-[254px] mx-auto text-center text-[21px] md:w-1/2 md:max-w-none lg:text-[30px]">
+
+                        <h3 class="pb-[10px] font-semibold" >Mail</h3>
+                        <a href="mailto:kimdungdt2412@gmail.com">kimdungdt2412@gmail.com</a>
+                </div>
+
+                <div class="max-w-[254px] mx-auto mt-[40px] text-center text-[21px] md:max-w-none md:mt-0 md:w-1/2 md:border-l-[1px] md:border-dark_blue md:pl-[30px] lg:text-[30px]">
+
+                    <h3 class="pb-[10px] font-semibold" >Phone</h3>
+                    <a href="tel:+84396465460">+84 396465460</a>
+            </div>
+            </div>
+
+
+            <div class="flex justify-center mb-[40px]">
+                <div
+                class="styled-button relative text-center flex items-center justify-center border-[1px] border-dark_blue rounded-[99px] overflow-hidden py-[8px] px-[16px] cursor-pointer w-fit">
+                <a class="tracking-widest" href="./resume.pdf" class="hyperlink" target="_blank">GET MY CV</a>
+            </div>
+
+            </div>
+    
+
+            <h4 class="thank-u font-inter text-[18px] mb-[20px] pl-[46px] mt-20 relative font-bold uppercase tracking-widest">Thank you for visiting. Live, love, laugh for you!
+
+
+            </h4>
+        </div>
+
+    </main>
+
+    <footer class="py-2 px-[25px] max-w-[1144px] mx-auto lg:max-w-[90%]">
+        <p class="text-[14px]">Dunne @2024</p>
+
+
+
+
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="/js/animate.js"></script>
 </body>
 
 </html>

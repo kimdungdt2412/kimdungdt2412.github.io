@@ -1,0 +1,87 @@
+.menu.expanded img {
+    display: block;
+}
+
+.menu.expanded span {
+    display: none;
+}
+
+#site-responsive-nav {
+    visibility: hidden;
+    clip-path: circle(36px at calc(100% - 51px) 51px);
+    transition-delay: .5s;
+}
+
+#site-responsive-nav.show {
+    visibility: visible;
+    clip-path: circle(100%);
+    transition-delay: 0s;
+    transition: clip-path 1s cubic-bezier(.005, -.05, .11, .845), -webkit-clip-path 1s cubic-bezier(.005, -.05, .11, .845);
+}
+
+#site-responsive-nav li {
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(.005, -.05, .11, .845);
+}
+
+#site-responsive-nav.show li {
+    opacity: 1;
+}
+
+#site-responsive-nav li:first-child,
+#site-responsive-nav li:first-child a {
+    transition-delay: .3s
+}
+
+#site-responsive-nav li:nth-child(2),
+#site-responsive-nav li:nth-child(2) a {
+    transition-delay: .2s
+}
+
+#site-responsive-nav li:nth-child(3),
+#site-responsive-nav li:nth-child(3) a {
+    transition-delay: .1s
+}
+
+#site-responsive-nav li:nth-child(4),
+#site-responsive-nav li:nth-child(4) a {
+    transition-delay: .0s
+}
+
+
+#site-responsive-nav.show li:first-child,  #site-responsive-nav.show li:first-child a{
+    transition-delay: 0s
+}
+
+#site-responsive-nav.show li:nth-child(2), #site-responsive-nav.show li:nth-child(2) a {
+    transition-delay: .1s
+}
+
+#site-responsive-nav.show li:nth-child(3), #site-responsive-nav.show li:nth-child(3) a {
+    transition-delay: .2s
+}
+
+#site-responsive-nav.show li:nth-child(4), #site-responsive-nav.show li:nth-child(4) a {
+    transition-delay: .3s
+}
+
+
+#site-responsive-nav li a {
+    transform: translateY(120px);
+    background-image: linear-gradient(#202C4B, #202C4B);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 0 1px;
+    transition: transform 1s cubic-bezier(.005, -.05, .11, .845), background-size .3s;
+}
+
+#site-responsive-nav li a:hover {
+    background-position: 55px 100%;
+    background-size: calc(100% - 55px) 1px;
+}
+
+
+
+#site-responsive-nav.show li a {
+    transform: translateY(0);
+}

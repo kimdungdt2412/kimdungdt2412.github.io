@@ -1,0 +1,131 @@
+@layer base {
+  @font-face {
+    font-family: 'Morion';
+    font-weight: 500;
+    font-style: normal;
+    src: local('※'),
+      url('../fonts/regular.woff2') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Morion';
+    font-weight: 500;
+    font-style: italic;
+    src: local('※'),
+      url('../fonts/italic.woff2') format('woff');
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+    color: #202C4B;
+    background: #F6F6EA;
+  }
+
+  .element-button {
+    transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  .styled-button::after {
+    background-color: #86FFC5;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: calc(100% + 2px);
+    z-index: -1;
+    transition: transform .3s cubic-bezier(.7, 0, .2, 1);
+  }
+
+  .styled-button:hover:after {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+  }
+
+  @keyframes move {
+    0% {
+      transform: rotate(0deg) scale(12) translateX(-20px);
+    }
+
+    100% {
+      transform: rotate(1turn) scale(18) translateX(20px);
+    }
+  }
+
+  @keyframes move2 {
+    0% {
+      transform: rotate(1turn) scale(18) translateX(20px);
+    }
+
+    100% {
+      transform: rotate(0deg) scale(12) translateX(-20px);
+    }
+  }
+
+  @keyframes swing {
+    20% {
+      transform: rotate3d(0, 0, 1, 15deg);
+    }
+
+    40% {
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+
+    60% {
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+
+    80% {
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+
+    to {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+
+
+  @keyframes sparkle-in {
+    0% {
+      background: #000;
+      transform: scale(0);
+    }
+
+    40% {
+      background: #000;
+      transform: scale(1.2);
+    }
+
+    60% {
+      background: #000;
+      transform: scale(1);
+    }
+
+    65% {
+      background: linear-gradient(45deg, #fff, #000);
+      transform: scale(1);
+    }
+
+    70% {
+      background: linear-gradient(45deg, #000, #fff);
+      transform: scale(1);
+    }
+
+    75% {
+      background: #000;
+      transform: scale(1);
+    }
+
+    100% {
+      background: #000;
+      transform: scale(1);
+    }
+  }
+}
