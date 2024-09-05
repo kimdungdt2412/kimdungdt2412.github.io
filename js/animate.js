@@ -41,6 +41,13 @@ $(function () {
     $window.trigger('scroll');
 });
 
+document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+        document.getElementById("loader").classList.add("loaded")
+        document.querySelector(".main-body").style.visibility = "visible";
+    } 
+};
+
 document.getElementById("nav-button").onclick = function () { handleClickNavButton() };
 document.getElementsByClassName("nav-item")
 

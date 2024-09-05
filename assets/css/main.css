@@ -109,7 +109,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    transition: transform .6s cubic-bezier(.215,.61,.355,1) 1.5s;
+    transition: transform .6s cubic-bezier(.215,.61,.355,1) 1s;
     z-index: 1;
     width: 40vw;
     height: auto;
@@ -122,7 +122,7 @@
 .about-me .line-circles svg:nth-child(2) {
     clip-path: circle(0 at 50% 100%);
     transform: rotate(90deg);
-    transition: clip-path .6s cubic-bezier(.215,.61,.355,1) 1s,transform .6s cubic-bezier(.215,.61,.355,1) 1.5s,-webkit-clip-path .6s cubic-bezier(.215,.61,.355,1) 1s;
+    transition: clip-path .6s cubic-bezier(.215,.61,.355,1) 0.4s,transform .6s cubic-bezier(.215,.61,.355,1) 1s,-webkit-clip-path .6s cubic-bezier(.215,.61,.355,1) 0.4s;
 }
 
 .about-me .line-circles.animated svg:nth-child(2) {
@@ -136,7 +136,7 @@
     content: "";
     height: 40vw;
     position: absolute;
-    transition: opacity .6s cubic-bezier(.215,.61,.355,1) 2.6s;
+    transition: opacity .6s cubic-bezier(.215,.61,.355,1) 1.8s;
     z-index: 0;
     left: 50%;
     top:50%;
@@ -149,7 +149,7 @@
 }
 
 .about-me .line-circles .cat-sticker img,  .about-me .line-circles .dog-sticker img{
-    transition: opacity .6s cubic-bezier(.215,.61,.355,1) 2.6s,transform .6s cubic-bezier(.215,.61,.355,1) 2.6s;
+    transition: opacity .6s cubic-bezier(.215,.61,.355,1) 1.6s,transform .6s cubic-bezier(.215,.61,.355,1) 1.8s;
 }
 
 .about-me .line-circles.animated .cat-sticker img {
@@ -163,7 +163,7 @@
     content: "";
     height: 40vw;
     position: absolute;
-    transition: opacity .6s cubic-bezier(.215,.61,.355,1) 2.6s;
+    transition: opacity .6s cubic-bezier(.215,.61,.355,1) 1.8s;
     z-index: 0;
     left: auto;
     top: 50%;
@@ -336,4 +336,18 @@
     content: "";
     background: #000;
     mask: radial-gradient(transparent 71%,#000 72%) 8137% 10000%/99.5% 99.5%;
+}
+
+.loading .loading-bg {
+    animation: showLoading 0.3s 0s backwards;
+}
+
+
+.loading.loaded .loading-bg {
+    pointer-events: none;
+    animation: hideLoading 0.3s 0s forwards;
+}
+
+.loading .loading-bg img {
+    animation: loadingAction 0.2s 0s infinite alternate;
 }
